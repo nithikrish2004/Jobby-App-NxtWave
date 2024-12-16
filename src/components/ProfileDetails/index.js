@@ -16,10 +16,10 @@ const ProfileDetails = props => {
     const {name, profileImageUrl, shortBio} = profileDetails
 
     return (
-      <div className="profile-details-container">
-        <img src={profileImageUrl} alt="profile" className="profile-image" />
-        <h1 className="profile-name">{name}</h1>
-        <p className="profile-bio">{shortBio}</p>
+      <div className='profile-details-container'>
+        <img src={profileImageUrl} alt='profile' className='profile-image' />
+        <h1 className='profile-name'>{name}</h1>
+        <p className='profile-bio'>{shortBio}</p>
       </div>
     )
   }
@@ -27,10 +27,10 @@ const ProfileDetails = props => {
   const renderProfileFailure = () => {
     const {getProfileDetails} = props
     return (
-      <div className="profile-failure-container">
+      <div className='profile-failure-container'>
         <button
-          className="retry-button"
-          type="button"
+          className='retry-button'
+          type='button'
           onClick={getProfileDetails}
         >
           Retry
@@ -40,8 +40,8 @@ const ProfileDetails = props => {
   }
 
   const renderProfileLoader = () => (
-    <div className="loader-container-profile" data-testid="loader">
-      <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
+    <div className='loader-container-profile' data-testid='loader'>
+      <Loader type='ThreeDots' color='#ffffff' height='50' width='50' />
     </div>
   )
 
